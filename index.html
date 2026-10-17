@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +35,7 @@
 
         .portfolio-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
 
         .card-img-container {
@@ -63,10 +64,10 @@
             position: relative;
             width: 100%;
             height: 0;
-            padding-bottom: 141%; 
+            padding-bottom: 141%;
             overflow: hidden;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .pdf-container iframe {
@@ -76,6 +77,20 @@
             width: 100%;
             height: 100%;
             border: 0;
+        }
+
+        .video-work {
+            max-width: 300px;
+        }
+
+        .video-container {
+            width: 100%;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         footer {
@@ -90,6 +105,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -101,8 +117,12 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">我的作品</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#game">遊戲專案</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#drawing">手繪作品</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#photo">攝影作品</a></li>-->
+                    <li class="nav-item"><a class="nav-link" href="#video">影音剪輯</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡方式</a></li>
+
                 </ul>
             </div>
         </div>
@@ -112,19 +132,15 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="形象照.jpg" 
-                        alt="個人頭像" 
-                        class="img-fluid shadow-lg" 
-                        style="width: 50%; height: auto; object-fit: contain; border: none; border-radius: 0;" 
+                    <img src="形象照.jpg" alt="個人頭像" class="img-fluid shadow-lg"
+                        style="width: 50%; height: auto; object-fit: contain; border: none; border-radius: 0;"
                         onerror="this.src='https://via.placeholder.com/400x500?text=Photo'">
                 </div>
                 <div class="col-md-8">
-                    <h1 class="display-4 fw-bold mb-3">哈囉!我是林庭萱</h1>
-                    <p class="lead mb-4">主修數位媒體設計，擅長建模、程式設計與概念發想，專注於結合設計與技術，將想法轉化為具體成果。具備跨領域整合與問題解決能力，重視結構與邏輯，並持續探索不同媒材與表現形式，期望透過各種不同的媒材和表現方式去設計並創造更完整且更具表達力的作品。</p>
-                    <div>
-                        <a href="#projects" class="btn btn-warning btn-lg fw-bold me-2">我的作品</a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg">聯絡我</a>
-                    </div>
+                    <h2 class="display-4 fw-bold mb-3">Hi!我是林庭萱</h2>
+                    <p class="lead mb-4">
+                        主修數位媒體設計，擅長建模、程式設計與概念發想，專注結合設計與技術，將想法轉化為具體成果。具備跨領域整合與問題解決能力，重視結構與邏輯，持續探索不同媒材與表現形式。除了遊戲設計外，也對影片剪輯與後期製作抱有濃厚興趣，並透過影像紀錄與呈現自己的創作歷程。
+                    </p>
                 </div>
             </div>
         </div>
@@ -138,9 +154,11 @@
                         <h5 class="fw-bold">學歷</h5>
                         <p class="text-muted">私立大同大學 | 數位媒體設計學系 數位遊戲設計組</p>
                     </div>
-                    <div> <h5 class="fw-bold mb-2">得獎紀錄</h5>
+                    <div>
+                        <h5 class="fw-bold mb-2">得獎紀錄</h5>
                         <ul class="list-unstyled" style="max-width: 350px;">
-                            <li class="d-flex justify-content-between mb-1"> <span><i class="bi bi-trophy-fill text-warning me-2"></i>2024 校內桌遊設計</span>
+                            <li class="d-flex justify-content-between mb-1"> <span><i
+                                        class="bi bi-trophy-fill text-warning me-2"></i>2024 校內桌遊設計</span>
                                 <span class="fw-bold">第一名</span>
                             </li>
                             <li class="d-flex justify-content-between mb-1">
@@ -148,15 +166,19 @@
                                 <span class="fw-bold">入圍</span>
                             </li>
                             <li class="d-flex justify-content-between mb-1">
-                                <span><i class="bi bi-trophy-fill text-warning me-2""></i>2025 校內遊戲設計二</span>
+                                <span><i class="bi bi-trophy-fill text-warning me-2"></i>2025 校內遊戲設計二</span>
                                 <span class="fw-bold">第二名</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-1">
+                                <span><i class="bi bi-trophy-fill text-warning me-2"></i>2026 專題設計</span>
+                                <span class="fw-bold">佳作</span>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <h3 class="fw-bold mb-4">專業技能</h3>
+                    <h5 class="fw-bold mb-4">專業技能</h5>
                     <div class="d-flex flex-wrap gap-2">
                         <span class="badge bg-secondary p-2">Unity</span>
                         <span class="badge bg-secondary p-2">Blender</span>
@@ -170,16 +192,17 @@
         </div>
     </section>
 
-    <main id="projects" class="container py-5">
-        <h2 class="text-center fw-bold mb-2">我的作品</h2>
-        <p class="text-muted text-center mb-5">點擊專案可詳細查看內容說明</p>
-        
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
-            
+    <main id="game" class="container py-5">
+        <h4 class="text-start  fw-bold mb-2">遊戲專案</h4>
+        <span class="text-muted text-start  mb-5">點擊專案可詳細查看內容說明</span><br><br>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
             <div class="col">
                 <div class="card h-100 portfolio-card shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal1">
                     <div class="card-img-container">
-                        <img src="Megalophobia_預覽圖.png" alt="Megalophobia" onerror="this.src='https://via.placeholder.com/400x250?text=1.+Unity+Game'">
+                        <img src="Megalophobia_預覽圖.png" alt="Megalophobia"
+                            onerror="this.src='https://via.placeholder.com/400x250?text=1.+Unity+Game'">
                     </div>
                     <div class="card-body">
                         <span class="badge badge-tech mb-2">#UE5</span>
@@ -201,7 +224,8 @@
             <div class="col">
                 <div class="card h-100 portfolio-card shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal2">
                     <div class="card-img-container">
-                        <img src="最後的濕地-重生_預覽圖.png" alt="最後的濕地-重生" onerror="this.src='https://via.placeholder.com/400x250?text=2.+Arduino+Hardware'">
+                        <img src="最後的濕地-重生_預覽圖.png" alt="最後的濕地-重生"
+                            onerror="this.src='https://via.placeholder.com/400x250?text=2.+Arduino+Hardware'">
                     </div>
                     <div class="card-body">
                         <span class="badge badge-tech mb-2">#合作塔防</span>
@@ -223,7 +247,8 @@
             <div class="col">
                 <div class="card h-100 portfolio-card shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal3">
                     <div class="card-img-container">
-                        <img src="精靈打水母_預覽圖.png" alt="精靈打水母" onerror="this.src='https://via.placeholder.com/400x250?text=3.+Hakka+Project'">
+                        <img src="精靈打水母_預覽圖.png" alt="精靈打水母"
+                            onerror="this.src='https://via.placeholder.com/400x250?text=3.+Hakka+Project'">
                     </div>
                     <div class="card-body">
                         <span class="badge badge-tech mb-2">#Unity (C#)</span>
@@ -246,7 +271,8 @@
             <div class="col">
                 <div class="card h-100 portfolio-card shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal4">
                     <div class="card-img-container">
-                        <img src="小心暑翹翹_預覽圖.png" alt="小心暑翹翹" onerror="this.src='https://via.placeholder.com/400x250?text=4.+360+Web+Design'">
+                        <img src="小心暑翹翹_預覽圖.png" alt="小心暑翹翹"
+                            onerror="this.src='https://via.placeholder.com/400x250?text=4.+360+Web+Design'">
                     </div>
                     <div class="card-body">
                         <span class="badge badge-tech mb-2">#Unity (C#)</span>
@@ -266,11 +292,19 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </main>
 
+    <main id="drawing" class="container py-5">
+        <h4 class="text-start  fw-bold mb-2">手繪作品</h4>
+        <span class="text-muted text-start  mb-5 ">點擊專案可詳細查看內容說明</span><br><br>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col">
                 <div class="card h-100 portfolio-card shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal5">
                     <div class="card-img-container">
-                        <img src="2D動畫_預覽圖.png" alt="2D動畫" onerror="this.src='https://via.placeholder.com/400x250?text=5.+Portfolio+Design'">
+                        <img src="2D動畫_預覽圖.png" alt="2D動畫"
+                            onerror="this.src='https://via.placeholder.com/400x250?text=5.+Portfolio+Design'">
                     </div>
                     <div class="card-body">
                         <span class="badge badge-tech mb-2">#2D手繪</span>
@@ -290,15 +324,68 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
 
+    <!--<main id="photo" class="container py-5">
+        <h4 class="text-start  fw-bold mb-2">攝影作品</h4>
+        <span class="text-muted text-start  mb-5 ">點擊專案可詳細查看內容說明</span><br><br>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100 portfolio-card shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                    <div class="card-img-container">
+                        <img src="植物_預覽圖.png" alt="植物"
+                            onerror="this.src='https://via.placeholder.com/400x250?text=6.+Portfolio+Design'">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge badge-tech mb-2">#植物</span>
+                        <span class="badge badge-tech mb-2">#手機拍攝</span>
+                        <h5 class="card-title fw-bold">植物</h5>
+                        <p class="card-text text-muted small">
+                            攝影作品-植物
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> -->
+    
+    <main id="video" class="container py-5">
+        <h4 class="text-start  fw-bold mb-2">影音剪輯</h4>
+        <span class="text-muted text-start  mb-5 ">點擊專案可詳細查看內容說明</span><br><br>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100 portfolio-card shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal7">
+                    <div class="card-img-container">
+                        <img src="地平線上的低吟_預覽圖.png" alt="地平線上的低吟"
+                            onerror="this.src='https://via.placeholder.com/400x250?text=5.+Portfolio+Design'">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge badge-tech mb-2">#展覽介紹</span>
+                        <span class="badge badge-tech mb-2">#手機拍攝</span>
+                        <span class="badge badge-tech mb-2">#Premiere Pro</span>
+                        <h5 class="card-title fw-bold">地平線上的低吟</h5>
+                        <p class="card-text text-muted small">
+                            思慕不只是慾望<br>
+                            是明知不可及仍伸手探尋<br>
+                            驅使我們的是那份不可能<br>
+                            它將我們推向無盡追尋<br>
+                            而渴望或許終不可及
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
     <section id="contact" class="bg-light py-5 border-top">
         <div class="container text-center" style="max-width: 600px;">
-            <h2 class="fw-bold mb-4">聯絡我</h2>
-            <p class="text-muted mb-4 text-center">如果您對我的作品感興趣，歡迎隨時與我聯繫！</p>
-            <p class="small text-secondary text-center">Email: lintinghsuan212@gmail.com | Phone: 0966-508-669</p>
+            <h4 class="fw-bold mb-4">聯絡方式</h4>
+            <p class="small text-secondary text-center">Email: lintinghsuan212@gmail.com</p>
+            <p class="small text-secondary text-center">Phone: 0966-508-669</p>
         </div>
     </section>
 
@@ -319,7 +406,8 @@
                 <div class="modal-body p-4">
                     <h4 class="fw-bold text-primary mb-3">專案概述</h4>
                     <h5 class="fw-bold mt-4">遊戲說明</h5>
-                    <p>你必須在這片失控的村莊中前進，依靠地圖判讀方向，找到5個祭壇並破壞，但別忘了，危險不只在地面，還有「那個東西」正悄悄逼近。地圖上標示著幾棟殘破的建築，能讓你暫時躲避危險，但那不是長久之計，停留過久，只會讓自己陷入更大的危機之中。</p>
+                    <p>你必須在這片失控的村莊中前進，依靠地圖判讀方向，找到5個祭壇並破壞，但別忘了，危險不只在地面，還有「那個東西」正悄悄逼近。地圖上標示著幾棟殘破的建築，能讓你暫時躲避危險，但那不是長久之計，停留過久，只會讓自己陷入更大的危機之中。
+                    </p>
 
                     <h5 class="fw-bold mt-4">遊戲目標</h5>
                     <p>摧毀 5 座祭壇，並活下來。</p>
@@ -327,22 +415,25 @@
                     <h5 class="fw-bold mt-4">遊戲內地圖</h5>
                     <p>玩家離開初始小屋前須在桌面上拾取地圖，玩家可以隨時拿出地圖查看路線，但地圖上並不會顯示玩家所在位子。</p>
                     <img src="Megalophobia_地圖.png" class="img-fluid rounded d-block" alt="Megalophobia_地圖">
-                        <p class="text-muted small mt-0">每一個方格都代表一棟房子，紅色圖示為須破壞的祭壇。</p>
-                    
+                    <p class="text-muted small mt-0">每一個方格都代表一棟房子，紅色圖示為須破壞的祭壇。</p>
+
                     <h5 class="fw-bold mt-4">主視覺海報</h5>
                     <p>背景是片霧茫茫的半廢棄村莊，上方還有「那個東西」隨時都會把玩家抓上去吃掉。</p>
-                    <img src="Megalophobia_主視覺海報.png" class="img-fluid rounded d-block" style="max-height: 400px;" alt="Megalophobia_主視覺海報">
-                        <p class="text-muted small mt-0">主視覺海報。</p>
+                    <img src="Megalophobia_主視覺海報.png" class="img-fluid rounded d-block" style="max-height: 400px;"
+                        alt="Megalophobia_主視覺海報">
+                    <p class="text-muted small mt-0">主視覺海報。</p>
 
                     <h4 class="fw-bold text-primary mb-3">設計說明</h4>
                     <h5 class="fw-bold mt-4">發想圖</h5>
                     <p>參考克蘇魯神話的概念，將怪物結合章魚、巨龍的印象去做設計，身體龐大卻沒設計簡單，相似大型蜈蚣，加上許多長條的類章魚觸手來捕捉玩家。</p>
                     <div class="mb-4">
-                        <img src="Megalophobia_發想圖1.png" class="img-fluid" style="width: 100%; max-width: 600px;" alt="Megalophobia_發想圖1.png">
+                        <img src="Megalophobia_發想圖1.png" class="img-fluid" style="width: 100%; max-width: 600px;"
+                            alt="Megalophobia_發想圖1.png">
                         <p class="text-muted small mt-0">怪物的整體外觀以大型蜈蚣的樣子做設計。</p>
                     </div>
                     <div class="mb-4">
-                        <img src="Megalophobia_發想圖2.png" class="img-fluid" style="width: 100%; max-width: 600px;" alt="Megalophobia_發想圖2.png">
+                        <img src="Megalophobia_發想圖2.png" class="img-fluid" style="width: 100%; max-width: 600px;"
+                            alt="Megalophobia_發想圖2.png">
                         <p class="text-muted small mt-0">怪物的觸手類似章魚觸手，會在玩家碰到時將玩家捲上去。</p>
                     </div>
 
@@ -356,23 +447,27 @@
                     <h5 class="fw-bold mt-4">怪物捕食動畫</h5>
                     <p>當玩家從怪物下走過，被觸手碰到的話，將直接被怪物抓走並吞食。</p>
                     <div class="mb-4">
-                        <img src="Megalophobia_怪物捕食動畫.png" class="img-fluid rounded d-block" alt="Megalophobia_怪物捕食動畫.png">
+                        <img src="Megalophobia_怪物捕食動畫.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_怪物捕食動畫.png">
                     </div>
 
                     <h5 class="fw-bold mt-4">遊戲內畫面</h5>
                     <div class="mb-4">
-                        <img src="Megalophobia_遊戲內畫面1.png" class="img-fluid rounded d-block" alt="Megalophobia_遊戲內畫面1.png">
+                        <img src="Megalophobia_遊戲內畫面1.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_遊戲內畫面1.png">
                         <p class="text-muted small mt-0">遠距離看若影若現的恐懼感。</p>
                     </div>
                     <div class="mb-4">
-                        <img src="Megalophobia_遊戲內畫面2.png" class="img-fluid rounded d-block" alt="Megalophobia_遊戲內畫面2.png">
+                        <img src="Megalophobia_遊戲內畫面2.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_遊戲內畫面2.png">
                         <p class="text-muted small mt-0">近距離看即將碰到觸手的壓力。</p>
                     </div>
 
                     <h5 class="fw-bold mt-4">祭壇設計</h5>
                     <p>嗜血祭壇，村民信奉的邪教祭壇，對5個祭壇獻上活人血便會召喚出「那個東西」，玩家必須找到並破壞掉村莊內的5個祭壇來阻止「那個東西」的靠近。</p>
                     <div class="mb-4">
-                        <img src="Megalophobia_祭壇設計1.png" class="img-fluid rounded d-block" alt="Megalophobia_祭壇設計1.png">
+                        <img src="Megalophobia_祭壇設計1.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_祭壇設計1.png">
                         <p class="text-muted small mt-0">草圖上視圖，設定為8根長短間格的木樁，長的4根分別與中間的血火有布條銜接。</p>
                     </div>
                     <div class="mb-4">
@@ -391,36 +486,44 @@
                     <h5 class="fw-bold mt-4">遊戲場景</h5>
                     <p>玩家的初始小屋，在家中拾取地圖跟斧頭的地方。</p>
                     <div class="mb-4">
-                        <img src="Megalophobia_遊戲場景1.png" class="img-fluid rounded d-block" alt="Megalophobia_遊戲場景1.png">
+                        <img src="Megalophobia_遊戲場景1.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_遊戲場景1.png">
                         <p class="text-muted small mt-0">玩家從夢中驚醒的地方。</p>
                     </div>
                     <div class="mb-4">
-                        <img src="Megalophobia_遊戲場景2.png" class="img-fluid rounded d-block" alt="Megalophobia_遊戲場景2.png">
+                        <img src="Megalophobia_遊戲場景2.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_遊戲場景2.png">
                         <p class="text-muted small mt-0">桌上放了一本村庄的地圖，沒有帶上出不去。</p>
                     </div>
                     <div class="mb-4">
-                        <img src="Megalophobia_遊戲場景3.png" class="img-fluid rounded d-block" alt="Megalophobia_遊戲場景3.png">
+                        <img src="Megalophobia_遊戲場景3.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_遊戲場景3.png">
                         <p class="text-muted small mt-0">門口放了一把可以摧毀祭壇的斧頭。</p>
                     </div>
                     <div class="mb-4">
-                        <img src="Megalophobia_遊戲場景4.png" class="img-fluid rounded d-block" alt="Megalophobia_遊戲場景4.png">
+                        <img src="Megalophobia_遊戲場景4.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_遊戲場景4.png">
                         <p class="text-muted small mt-0">房間裡唯一的一扇窗戶，看出去霧茫茫一片，增加恐懼感。</p>
                     </div>
                     <p>戶外可以暫時躲避的建築以及需破壞的祭壇樣貌。</p>
                     <div class="mb-4">
-                        <img src="Megalophobia_遊戲場景5.png" class="img-fluid rounded d-block" alt="Megalophobia_遊戲場景5.png">
+                        <img src="Megalophobia_遊戲場景5.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_遊戲場景5.png">
                         <p class="text-muted small mt-0">詭異的祭壇，玩家須找到5座並摧毀。</p>
                     </div>
                     <div class="mb-4">
-                        <img src="Megalophobia_遊戲場景6.png" class="img-fluid rounded d-block" alt="Megalophobia_遊戲場景6.png">
+                        <img src="Megalophobia_遊戲場景6.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_遊戲場景6.png">
                         <p class="text-muted small mt-0">詭異的教堂，講台上似乎放了一本書。</p>
                     </div>
                     <div class="mb-4">
-                        <img src="Megalophobia_遊戲場景7.png" class="img-fluid rounded d-block" alt="Megalophobia_遊戲場景7.png">
+                        <img src="Megalophobia_遊戲場景7.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_遊戲場景7.png">
                         <p class="text-muted small mt-0">看似破爛的房子，卻可以讓你躲避「它」的追擊。</p>
                     </div>
                     <div class="mb-4">
-                        <img src="Megalophobia_遊戲場景8.png" class="img-fluid rounded d-block" alt="Megalophobia_遊戲場景8.png">
+                        <img src="Megalophobia_遊戲場景8.png" class="img-fluid rounded d-block"
+                            alt="Megalophobia_遊戲場景8.png">
                         <p class="text-muted small mt-0">很多不同樣式的樹，看起來有點陰森。</p>
                     </div>
                 </div>
@@ -438,18 +541,19 @@
                 <div class="modal-body p-4">
                     <h4 class="fw-bold text-primary mb-3">專案概述</h4>
                     <h5 class="fw-bold mt-4">遊戲說明</h5>
-                    <p>這款遊戲是模擬汙水擴散與濕地淨化，汙水會隨回合推進，玩家需要合作種植濕地植物吸收汙水，防止汙染惡化。通過分配資源購買植物，合理佈局，並使用技能應對環境挑戰，逐步淨化汙水。遊戲強調策略性與合作，每回合的擴散與吸收節奏讓挑戰與成就感並存。 </p>
-                    
+                    <p>這款遊戲是模擬汙水擴散與濕地淨化，汙水會隨回合推進，玩家需要合作種植濕地植物吸收汙水，防止汙染惡化。通過分配資源購買植物，合理佈局，並使用技能應對環境挑戰，逐步淨化汙水。遊戲強調策略性與合作，每回合的擴散與吸收節奏讓挑戰與成就感並存。
+                    </p>
+
                     <h5 class="fw-bold mt-4">遊戲目標</h5>
                     <p>淨化所有汙水，復育濕地環境。</p>
 
                     <h5 class="fw-bold mt-4">桌遊展示</h5>
                     <img src="最後的濕地-重生_桌遊展示1.jpg" class="img-fluid rounded d-block" alt="最後的濕地-重生_桌遊展示1">
-                        <p class="text-muted small mt-0">桌遊道具配件。</p>
+                    <p class="text-muted small mt-0">桌遊道具配件。</p>
                     <img src="最後的濕地-重生_桌遊展示2.jpg" class="img-fluid rounded d-block" alt="最後的濕地-重生_桌遊展示2">
-                        <p class="text-muted small mt-0">桌遊展示。</p>
+                    <p class="text-muted small mt-0">桌遊展示。</p>
                     <img src="最後的濕地-重生_桌遊展示3.jpg" class="img-fluid rounded d-block" alt="最後的濕地-重生_桌遊展示3">
-                        <p class="text-muted small mt-0">桌遊展示。</p>
+                    <p class="text-muted small mt-0">桌遊展示。</p>
 
                     <h4 class="fw-bold text-primary mb-3">設計說明</h4>
                     <h5 class="fw-bold mt-4">開始遊戲(初始配置)</h5>
@@ -481,22 +585,25 @@
                     </p>
 
                     <img src="最後的濕地-重生_桌遊示意圖.png" class="img-fluid rounded d-block" alt="最後的濕地-重生_桌遊示意圖">
-                        <p class="text-muted small mt-0">桌遊物件擺放示意圖。</p>
+                    <p class="text-muted small mt-0">桌遊物件擺放示意圖。</p>
 
                     <h5 class="fw-bold mt-4">河流&種植板</h5>
-                    <img src="最後的濕地-重生_河流&種植板.png" class="img-fluid rounded d-block" style="max-height: 400px;" alt="最後的濕地-重生_河流&種植板">
+                    <img src="最後的濕地-重生_河流&種植板.png" class="img-fluid rounded d-block" style="max-height: 400px;"
+                        alt="最後的濕地-重生_河流&種植板">
 
                     <h5 class="fw-bold mt-4">角色卡&角色技能卡 </h5>
-                    <img src="最後的濕地-重生_角色卡&角色技能卡.png" class="img-fluid rounded d-block" style="max-height: 400px;" alt="最後的濕地-重生_角色卡&角色技能卡">
+                    <img src="最後的濕地-重生_角色卡&角色技能卡.png" class="img-fluid rounded d-block" style="max-height: 400px;"
+                        alt="最後的濕地-重生_角色卡&角色技能卡">
 
                     <h5 class="fw-bold mt-4">事件卡</h5>
-                    <img src="最後的濕地-重生_事件卡.png" class="img-fluid rounded d-block" style="max-height: 400px;" alt="最後的濕地-重生_事件卡">
+                    <img src="最後的濕地-重生_事件卡.png" class="img-fluid rounded d-block" style="max-height: 400px;"
+                        alt="最後的濕地-重生_事件卡">
 
                     <h5 class="fw-bold mt-4">出水口</h5>
                     <img src="最後的濕地-重生_出水口1.jpg" class="img-fluid rounded d-block" alt="最後的濕地-重生_出水口1">
-                        <p class="text-muted small mt-0">上面畫有收音機的符號，是用來放置事件卡的位置。</p>
+                    <p class="text-muted small mt-0">上面畫有收音機的符號，是用來放置事件卡的位置。</p>
                     <img src="最後的濕地-重生_出水口2.jpg" class="img-fluid rounded d-block" alt="最後的濕地-重生_出水口2">
-                        <p class="text-muted small mt-0">中間的洞口是給河流穿過的地方。</p>
+                    <p class="text-muted small mt-0">中間的洞口是給河流穿過的地方。</p>
 
                     <h5 class="fw-bold mt-4">3種汙水分子</h5>
                     <p>汙水分子分為3個顏色，每個顏色分別代表一種汙水類型。</p>
@@ -529,17 +636,18 @@
                 <div class="modal-body p-4">
                     <h4 class="fw-bold text-primary mb-3">專案概述</h4>
                     <h5 class="fw-bold mt-4">遊戲說明</h5>
-                    <p>參考遊戲黎明前二十分鐘的玩法，敵人會從螢幕外的各個角落不斷向玩家移動，玩家需透過WASD移動，並使用滑鼠左鍵發射子彈來攻擊敵人，射中的敵人有機率會掉落經驗球，可以用來升級提升自己，碰到敵人會損失生命，當生命耗盡即結束遊戲。 </p>
-                    
+                    <p>參考遊戲黎明前二十分鐘的玩法，敵人會從螢幕外的各個角落不斷向玩家移動，玩家需透過WASD移動，並使用滑鼠左鍵發射子彈來攻擊敵人，射中的敵人有機率會掉落經驗球，可以用來升級提升自己，碰到敵人會損失生命，當生命耗盡即結束遊戲。
+                    </p>
+
                     <h5 class="fw-bold mt-4">遊戲目標</h5>
                     <p>在生命耗盡前，盡可能殺越多敵人得到越多分數。</p>
 
                     <img src="精靈打水母_遊戲畫面1.png" class="img-fluid rounded d-block" alt="精靈打水母_遊戲畫面1">
-                        <p class="text-muted small mt-0">開始選單，按下開始進入遊戲。</p>
+                    <p class="text-muted small mt-0">開始選單，按下開始進入遊戲。</p>
                     <img src="精靈打水母_遊戲畫面2.png" class="img-fluid rounded d-block" alt="精靈打水母_遊戲畫面2">
-                        <p class="text-muted small mt-0">技能選擇畫面，二選一。</p>
+                    <p class="text-muted small mt-0">技能選擇畫面，二選一。</p>
                     <img src="精靈打水母_遊戲畫面3.png" class="img-fluid rounded d-block" alt="精靈打水母_遊戲畫面3">
-                        <p class="text-muted small mt-0">結束畫面，死亡後顯示擊殺數，可再玩一次或直接退出。</p>
+                    <p class="text-muted small mt-0">結束畫面，死亡後顯示擊殺數，可再玩一次或直接退出。</p>
 
                     <h4 class="fw-bold text-primary mb-3">設計說明</h4>
                     <h5 class="fw-bold mt-4">角色設計</h5>
@@ -553,11 +661,13 @@
 
                     <h5 class="fw-bold mt-4">技能選擇</h5>
                     <p>總共有3種技能<br>每次升級會隨機2個給玩家選擇1個</p>
-                    <img src="精靈打水母_技能選擇.png" class="img-fluid rounded d-block" style="max-height: 400px;" alt="精靈打水母_技能選擇">
+                    <img src="精靈打水母_技能選擇.png" class="img-fluid rounded d-block" style="max-height: 400px;"
+                        alt="精靈打水母_技能選擇">
 
                     <h5 class="fw-bold mt-4">技能等級</h5>
                     <p>技能的右下角的數字代表該技能的等級。</p>
-                    <img src="精靈打水母_技能等級.png" class="img-fluid rounded d-block" style="max-height: 400px;" alt="精靈打水母_技能等級">
+                    <img src="精靈打水母_技能等級.png" class="img-fluid rounded d-block" style="max-height: 400px;"
+                        alt="精靈打水母_技能等級">
 
                     <h5 class="fw-bold mt-4">遊戲畫面說明</h5>
                     <img src="精靈打水母_遊戲畫面說明.png" class="img-fluid rounded d-block" alt="精靈打水母_遊戲畫面說明">
@@ -576,13 +686,15 @@
                 <div class="modal-body p-4">
                     <h4 class="fw-bold text-primary mb-3">專案概述</h4>
                     <h5 class="fw-bold mt-4">遊戲說明</h5>
-                    <p>玩家需先在家中收集露營所需用品，例如食物、手電筒、急救包與帳篷等，學習正確的行前準備觀念。進入山區後，玩家必須尋找合適的紮營地點，避開山坡旁、水邊等危險區域。遊戲中也會出現各種突發狀況與錯誤選擇，讓玩家了解不安全行為可能造成的後果。 </p>
-                    
+                    <p>玩家需先在家中收集露營所需用品，例如食物、手電筒、急救包與帳篷等，學習正確的行前準備觀念。進入山區後，玩家必須尋找合適的紮營地點，避開山坡旁、水邊等危險區域。遊戲中也會出現各種突發狀況與錯誤選擇，讓玩家了解不安全行為可能造成的後果。
+                    </p>
+
                     <h5 class="fw-bold mt-4">遊戲目標</h5>
                     <p>帶上正確的東西出發，並安全紮營。</p>
 
                     <h5 class="fw-bold mt-4">設計背景</h5>
-                    <p>近年露營與登山活動越來越熱門，但因裝備準備不足、誤選營地或缺乏安全觀念而發生的意外也逐漸增加。許多人在戶外活動時容易忽略環境風險，導致危險發生。因此，本提案以登山露營為主題，透過 VR 與遊戲化設計，讓玩家在虛擬情境中學習正確的露營安全觀念與風險判斷能力。</p>
+                    <p>近年露營與登山活動越來越熱門，但因裝備準備不足、誤選營地或缺乏安全觀念而發生的意外也逐漸增加。許多人在戶外活動時容易忽略環境風險，導致危險發生。因此，本提案以登山露營為主題，透過 VR
+                        與遊戲化設計，讓玩家在虛擬情境中學習正確的露營安全觀念與風險判斷能力。</p>
 
                     <h5 class="fw-bold mt-4">主視覺海報</h5>
                     <p>以森林為背景，中間用告示牌的方式呈現遊戲名稱。</p>
@@ -601,7 +713,7 @@
                     <img src="小心暑翹翹_山區場景.png" class="img-fluid rounded d-block" alt="小心暑翹翹_山區場景">
 
 
-                    
+
                 </div>
             </div>
         </div>
@@ -617,25 +729,43 @@
                 <div class="modal-body p-4">
                     <h4 class="fw-bold text-primary mb-3">專案說明</h4>
                     <h5 class="fw-bold mt-4">說明</h5>
-                    <p>這次的專案是一個2D的手繪動畫，規則是將 A 動漫主題曲裡的人物改成用 B 動漫的角色來呈現，我選了兩部自己非常喜歡的動漫，以《孤獨搖滾》節奏非常輕快可愛的片尾曲《Distortion!!》為基礎，但把裡面登場的四位主角，全部換成《咒術迴戰》裡伏黑惠的式神。</p>
-                    
+                    <p>這次的專案是一個2D的手繪動畫，規則是將 A 動漫主題曲裡的人物改成用 B
+                        動漫的角色來呈現，我選了兩部自己非常喜歡的動漫，以《孤獨搖滾》節奏非常輕快可愛的片尾曲《Distortion!!》為基礎，但把裡面登場的四位主角，全部換成《咒術迴戰》裡伏黑惠的式神。</p>
+
                     <h5 class="fw-bold mt-4">封面</h5>
                     <img src="2D動畫_封面.png" class="img-fluid rounded d-block" alt="2D動畫封面">
-                        <p class="text-muted small mt-0">封面用了孤獨搖滾的配色，角色改成了伏黑惠的式神。</p>
+                    <p class="text-muted small mt-0">封面用了孤獨搖滾的配色，角色改成了伏黑惠的式神。</p>
 
                     <h5 class="fw-bold mt-4">色彩規劃</h5>
                     <p>選用的4種顏色分別是孤獨搖滾中主角四人的各自代表色，每一個顏色再搭配咒術迴戰中伏黑惠的10種式神中我最喜歡的4隻，玉犬、蝦蟇、大蛇、脫兔。</p>
                     <div class="d-flex flex-wrap gap-3 mt-2 mb-4">
-                        <div class="d-flex align-items-center"><div style="width: 20px; height: 20px; background-color: #ffd4e0; border-radius: 50%; margin-right: 8px;"></div><span>淺緋紅色#ffd4e0</span></div>
-                        <div class="d-flex align-items-center"><div style="width: 20px; height: 20px; background-color: #f3e56a; border-radius: 50%; margin-right: 8px;"></div><span>黃色#f3e56a</span></div>
-                        <div class="d-flex align-items-center"><div style="width: 20px; height: 20px; background-color: #ef6464; border-radius: 50%; margin-right: 8px;"></div><span>鮮紅色#ef6464</span></div>
-                        <div class="d-flex align-items-center"><div style="width: 20px; height: 20px; background-color: #99bcff; border-radius: 50%; margin-right: 8px;"></div><span>粉藍色#99bcff</span></div>
+                        <div class="d-flex align-items-center">
+                            <div
+                                style="width: 20px; height: 20px; background-color: #ffd4e0; border-radius: 50%; margin-right: 8px;">
+                            </div><span>淺緋紅色#ffd4e0</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div
+                                style="width: 20px; height: 20px; background-color: #f3e56a; border-radius: 50%; margin-right: 8px;">
+                            </div><span>黃色#f3e56a</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div
+                                style="width: 20px; height: 20px; background-color: #ef6464; border-radius: 50%; margin-right: 8px;">
+                            </div><span>鮮紅色#ef6464</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div
+                                style="width: 20px; height: 20px; background-color: #99bcff; border-radius: 50%; margin-right: 8px;">
+                            </div><span>粉藍色#99bcff</span>
+                        </div>
                     </div>
 
                     <h5 class="fw-bold">角色選擇</h5>
                     <p>角色選擇的是伏黑惠的式神中我最喜歡的4隻。</p>
                     <div class="mb-4">
-                        <img src="2D動畫_角色選擇.png" class="img-fluid" style="width: 100%; max-width: 600px;" alt="2D動畫_角色選擇">
+                        <img src="2D動畫_角色選擇.png" class="img-fluid" style="width: 100%; max-width: 600px;"
+                            alt="2D動畫_角色選擇">
                         <p class="text-muted small mt-0">玉犬、蝦蟇、大蛇、脫兔。</p>
                     </div>
 
@@ -646,12 +776,18 @@
                     <img src="2D動畫_腳本4.png" class="img-fluid rounded mb-4" alt="2D動畫_腳本4">
 
                     <div class="mt-5 p-3 bg-light rounded text-center border">
-                        <h5 class="fw-bold mb-3"><i class="bi bi-play-circle-fill text-danger"></i> 動畫完整影片</h5>
-                        <a href="https://1drv.ms/v/c/4d3152289c661e86/IQCGHmacKFIxIIBN73ACAAAAAXliBjlilg-a744ribEbWdI?e=GfRWbo" 
-                        target="_blank" 
-                        class="btn btn-primary w-100 fw-bold">
-                        點擊觀看完整影片
-                        </a>
+
+                        <h5 class="fw-bold mb-3">動畫影片</h5>
+
+                        <video controls preload="metadata"
+                            style="width: 100%; height: auto; border-radius: 8px;">
+
+                            <source src="2D動畫.mp4" type="video/mp4">
+
+                            您的瀏覽器不支援影片播放。
+
+                        </video>
+
                     </div>
 
                 </div>
@@ -659,6 +795,122 @@
         </div>
     </div>
 
+    <div class="modal fade" id="projectModal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">植物</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h4 class="fw-bold text-primary mb-3">專案說明</h4>
+                    <h5 class="fw-bold mt-4">說明</h5>
+                    <p>這次的專案是一個2D的手繪動畫，規則是將 A 動漫主題曲裡的人物改成用 B
+                        動漫的角色來呈現，我選了兩部自己非常喜歡的動漫，以《孤獨搖滾》節奏非常輕快可愛的片尾曲《Distortion!!》為基礎，但把裡面登場的四位主角，全部換成《咒術迴戰》裡伏黑惠的式神。</p>
+
+                    <h5 class="fw-bold mt-4">封面</h5>
+                    <img src="2D動畫_封面.png" class="img-fluid rounded d-block" alt="2D動畫封面">
+                    <p class="text-muted small mt-0">封面用了孤獨搖滾的配色，角色改成了伏黑惠的式神。</p>
+
+                    <h5 class="fw-bold mt-4">色彩規劃</h5>
+                    <p>選用的4種顏色分別是孤獨搖滾中主角四人的各自代表色，每一個顏色再搭配咒術迴戰中伏黑惠的10種式神中我最喜歡的4隻，玉犬、蝦蟇、大蛇、脫兔。</p>
+                    <div class="d-flex flex-wrap gap-3 mt-2 mb-4">
+                        <div class="d-flex align-items-center">
+                            <div
+                                style="width: 20px; height: 20px; background-color: #ffd4e0; border-radius: 50%; margin-right: 8px;">
+                            </div><span>淺緋紅色#ffd4e0</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div
+                                style="width: 20px; height: 20px; background-color: #f3e56a; border-radius: 50%; margin-right: 8px;">
+                            </div><span>黃色#f3e56a</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div
+                                style="width: 20px; height: 20px; background-color: #ef6464; border-radius: 50%; margin-right: 8px;">
+                            </div><span>鮮紅色#ef6464</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div
+                                style="width: 20px; height: 20px; background-color: #99bcff; border-radius: 50%; margin-right: 8px;">
+                            </div><span>粉藍色#99bcff</span>
+                        </div>
+                    </div>
+
+                    <h5 class="fw-bold">角色選擇</h5>
+                    <p>角色選擇的是伏黑惠的式神中我最喜歡的4隻。</p>
+                    <div class="mb-4">
+                        <img src="2D動畫_角色選擇.png" class="img-fluid" style="width: 100%; max-width: 600px;"
+                            alt="2D動畫_角色選擇">
+                        <p class="text-muted small mt-0">玉犬、蝦蟇、大蛇、脫兔。</p>
+                    </div>
+
+                    <h5 class="fw-bold">腳本</h5>
+                    <img src="2D動畫_腳本1.png" class="img-fluid rounded mb-4" alt="2D動畫_腳本1">
+                    <img src="2D動畫_腳本2.png" class="img-fluid rounded mb-4" alt="2D動畫_腳本2">
+                    <img src="2D動畫_腳本3.png" class="img-fluid rounded mb-4" alt="2D動畫_腳本3">
+                    <img src="2D動畫_腳本4.png" class="img-fluid rounded mb-4" alt="2D動畫_腳本4">
+
+                    <div class="mt-5 p-3 bg-light rounded text-center border">
+
+                        <h5 class="fw-bold mb-3">動畫影片</h5>
+
+                        <video controls preload="metadata"
+                            style="width: 100%; height: auto; border-radius: 8px;">
+
+                            <source src="2D動畫.mp4" type="video/mp4">
+
+                            您的瀏覽器不支援影片播放。
+
+                        </video>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectModal7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">地平線上的低吟</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h4 class="fw-bold text-primary mb-3">專案說明</h4>
+                    <h5 class="fw-bold mt-4">製作資訊</h5>
+                    <p>類型｜展覽介紹影片<br>
+                        負責項目｜影片剪輯、字幕編排、音樂配置<br>
+                        使用工具｜Premiere Pro</p>
+                    <h5 class="fw-bold mt-4">作品簡介</h5>
+                    <p>《地平線上的低吟》是一支以展覽介紹為主題的影音作品，透過影像剪輯重新整理展覽中的空間、作品與文字資訊，讓觀眾能在短時間內理解展覽主題與整體氛圍。</p>
+                    <h5 class="fw-bold mt-4">製作重點</h5>
+                    <p>依照展覽內容與空間順序整理素材，透過畫面節奏、字幕與音樂搭配，使展覽資訊能以較清楚且具有氛圍感的方式呈現。</p>
+
+                    <div class="mt-5 p-3 bg-light rounded text-center border">
+
+                        <h5 class="fw-bold mb-3">完整影片</h5>
+
+                        <video controls preload="metadata"
+                            style="width: 40%; height: auto; border-radius: 8px;">
+
+                            <source src="地平線上的低吟_最終版.mp4" type="video/mp4">
+
+                            您的瀏覽器不支援影片播放。
+
+                        </video>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
